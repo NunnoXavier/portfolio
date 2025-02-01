@@ -1,7 +1,13 @@
+import { LegacyRef } from "react"
 
-const Projetos = () => {
+interface ProjetosProps{
+  elementRef?: LegacyRef<HTMLDivElement>
+}
+
+
+const Projetos:React.FC<ProjetosProps> = ({ elementRef }) => {
     return (
-      <section>
+      <section ref={ elementRef }>
         Projetos
       </section>
     )

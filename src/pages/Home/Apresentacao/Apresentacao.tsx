@@ -6,10 +6,13 @@ import Avatar from "../../../assets/images/avatar.jpg"
 import Theme from "../../../Theme";
 import StyledButton from "../../../components/StyledButton/StyledButton"
 import BackgroundImage from "../../../components/BackgroundImage/BackgroundImage"
+import { LegacyRef } from "react";
 
+interface ApresentacaoProps{
+  elementRef?: LegacyRef<HTMLDivElement>
+}
 
-
-const Apresentacao = () => {  
+const Apresentacao: React.FC<ApresentacaoProps> = ( { elementRef } ) => {  
   
   const StyledSection = styled("div")( () => ({
     backgroundColor: Theme.palette.primary.main,
@@ -25,7 +28,7 @@ const Apresentacao = () => {
   }))
 
   return ( 
-    <StyledSection>
+    <StyledSection ref={ elementRef }>
       <Container>
         <Grid container display="flex" alignItems="center">
           <Grid size={{ xs:12, md:5 }}>
