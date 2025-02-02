@@ -28,7 +28,7 @@ const BackgroundImage: React.FC<BackgroundImageProps> = ({ children }) =>{
 
     return(
         <StyledDiv>
-            <Box position="absolute" width={"100%"} top={-50} right={0}>
+            <Box position="absolute" width={"150%"} top={-50} right={0}>
                 <AnimatedBackground/>
             </Box>            
             <StyledImageDiv>

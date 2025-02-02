@@ -1,4 +1,4 @@
-import { Card, CardOwnProps, styled } from "@mui/material"
+import { Card, styled } from "@mui/material"
 
 export interface MyCardProps{
   children?: React.ReactNode,
