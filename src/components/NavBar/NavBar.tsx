@@ -23,7 +23,7 @@ const NavBar:React.FC<NavBarProps> = ({ clickHome, clickSobre, clickProjetos }) 
     }))
 
     return(
-        <AppBar>
+        <AppBar position="fixed">
             <StyledToolbar>
                 <StyledMenuItem onClick={ clickHome }>
                     Home
