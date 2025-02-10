@@ -1,12 +1,14 @@
 import { styled } from "@mui/material"
-import { ReactNode } from "react"
+import { ButtonHTMLAttributes, MouseEventHandler, ReactNode } from "react"
 import Theme from "../../Theme"
 
 interface StyledButtonProps{
-    children: ReactNode
+    children?: ReactNode,
+    onClick?: MouseEventHandler<HTMLButtonElement>,
+    type?: "submit" | "button" | "reset" | undefined
 } 
 
-const StyledButton: React.FC<StyledButtonProps> = ({ children }) => {
+const StyledButton: React.FC<StyledButtonProps> = ( props ) => {
     const SButton = styled("button")( () => ({
         background: "transparent",
         color: Theme.palette.primary.contrastText,
@@ -25,8 +27,8 @@ const StyledButton: React.FC<StyledButtonProps> = ({ children }) => {
 
 
     return(
-        <SButton>
-            { children }
+        <SButton onClick={props.onClick} type={ props.type }>
+            { props.children }
         </SButton>
 
     )

@@ -10,7 +10,6 @@ import DelphiIcon from "../../../assets/icons/delphi.svg"
 import MysqlIcon from "../../../assets/icons/mysql.svg"
 import PostgreIcon from "../../../assets/icons/postgresql.svg"
 import GoIcon from "../../../assets/icons/golang.svg"
-import { Height } from "@mui/icons-material"
 
 
 const Skills = () => {
@@ -31,7 +30,7 @@ const Skills = () => {
     
     return(
         <StyledContainer>        
-            <Typography variant="h4">Habilidades</Typography>            
+            <Typography variant="h4" style={{ paddingTop: "20px" }}>Habilidades</Typography>            
                 <StyledGroup container spacing={2}>            
                     <CardSkill name="React Js" icon={ ReactIcon }/>
                     <CardSkill name="Next Js" icon={ NextJs }/>

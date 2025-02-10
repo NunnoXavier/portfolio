@@ -15,6 +15,7 @@ const BackgroundImage: React.FC<BackgroundImageProps> = ({ children }) =>{
         alignItems: "center",
         justifyContent: "center",
         margin: "10px 10px",
+        zIndex: 1
       }) )
 
       const StyledImageDiv = styled('div')( () => ({
@@ -28,7 +29,7 @@ const BackgroundImage: React.FC<BackgroundImageProps> = ({ children }) =>{
 
     return(
         <StyledDiv>
-            <Box position="absolute" width={"150%"} top={-50} right={0}>
+            <Box position="absolute" width={"150%"} top={-150} right={-110} zIndex={0}>
                 <AnimatedBackground/>
             </Box>            
             <StyledImageDiv>
@@ -39,5 +40,4 @@ const BackgroundImage: React.FC<BackgroundImageProps> = ({ children }) =>{
     )
 }
 
-//export default withStyles( BackgroundImage )
 export default BackgroundImage
