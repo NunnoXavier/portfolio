@@ -1,5 +1,5 @@
 import { styled } from "@mui/material"
-import { ButtonHTMLAttributes, MouseEventHandler, ReactNode } from "react"
+import { MouseEventHandler, ReactNode } from "react"
 import Theme from "../../Theme"
 
 interface StyledButtonProps{

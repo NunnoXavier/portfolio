@@ -32,7 +32,6 @@ const Contato = () =>{
     const [ name, setName ] = useState('')
     const [ email, setEmail ] = useState('')
     const [ message, setMessage ] = useState('')
-    const [ response, setResponse ] = useState('')
 
 
     return (
@@ -80,11 +79,6 @@ const Contato = () =>{
                                 </Typography>
                             </StyledButton>
 
-                        </Grid>
-                        <Grid>
-                        <div>
-                            <Typography>{ response }</Typography>
-                        </div>
                         </Grid>
                     </Grid>
 

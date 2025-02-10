@@ -17,7 +17,7 @@ const Home = () => {
   const homeClick = () => {
     scrollToSection(sectionHome)
   }
-  const sobreClick = (e:React.SyntheticEvent) => {
+  const sobreClick = () => {
     scrollToSection(sectionSobre)
   }
   const projetosClick = () => {

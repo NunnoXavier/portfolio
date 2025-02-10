@@ -9,7 +9,7 @@ import Theme from "../../../Theme";
 
   const CardProjeto: React.FC<CardProjetoProps> = ({ children }) => {
     return(
-        <MyCard style={{ background: Theme.palette.primary.main, '&:hover': { background:Theme.palette.primary.light } }}>
+        <MyCard myStyle={{ background: Theme.palette.primary.main }}>
             { children }
         </MyCard>
     )

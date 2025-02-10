@@ -10,11 +10,7 @@ let Theme = createTheme({
           }
     },
     typography: {
-      fontFamily: [
-//        '"Segoe UI"', 
-//        'Roboto', 
-        '"Helvetica Neue"',
-      ]
+      fontFamily: '"Helvetica Neue"'
     }
 })
 
