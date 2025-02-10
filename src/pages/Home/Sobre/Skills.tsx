@@ -1,4 +1,4 @@
-import { styled, Grid2 as Grid, Stack, Typography } from "@mui/material"
+import { styled, Grid2 as Grid, Typography } from "@mui/material"
 import CardSkill from "./CardSkill"
 import ReactIcon from "../../../assets/icons/react.svg"
 import NextJs from "../../../assets/icons/next-js.svg"

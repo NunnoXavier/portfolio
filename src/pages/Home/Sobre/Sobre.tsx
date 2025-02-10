@@ -1,5 +1,4 @@
-import { Typography, styled, Card, 
-  CardContent, CardHeader, Grid2 as Grid, Stack, List, ListItem} from "@mui/material"
+import { Typography, styled, CardContent, Grid2 as Grid, Stack} from "@mui/material"
 import Skills from "./Skills"
 import Theme from "../../../Theme"
 import { LegacyRef } from "react"
