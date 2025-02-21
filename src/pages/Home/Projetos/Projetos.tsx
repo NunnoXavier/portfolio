@@ -2,9 +2,9 @@ import { styled, Grid2 as Grid, CardContent, Typography } from "@mui/material"
 import { LegacyRef } from "react"
 import Theme from "../../../Theme"
 import CardProjeto from "./CardProjeto"
-import Projeto1 from "../../../assets/images/fb.gif"
+import Projeto1 from "../../../assets/images/snake.gif"
 import Projeto2 from "../../../assets/images/orkut.webp"
-import Projeto3 from "../../../assets/images/snake.gif"
+import Projeto3 from "../../../assets/images/fb.gif"
 import Projeto4 from "../../../assets/images/doom-fire.gif"
 
 interface ProjetosProps{
@@ -29,7 +29,8 @@ const Projetos:React.FC<ProjetosProps> = ({ elementRef }) => {
           </Typography>
           <Grid container spacing={2} sx={{marginY:"4%" }}>
             <Grid size={{ xs:12, md:6 }} sx={{ height: "100%" }}>
-              <CardProjeto>
+              <CardProjeto linkProjeto="https://nunnoxavier.github.io/snake-game/" 
+                linkCodigo="https://github.com/nunnoxavier/snake-game" >
                 <CardContent sx={{ textAlign:"center", height:"100%" }}>
                   <img src={Projeto1} alt="" />
                 </CardContent>
