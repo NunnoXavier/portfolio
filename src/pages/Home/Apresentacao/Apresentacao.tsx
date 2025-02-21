@@ -6,9 +6,9 @@ import Avatar from "../../../assets/images/avatar.jpg"
 import Theme from "../../../Theme";
 import StyledButton from "../../../components/StyledButton/StyledButton"
 import BackgroundImage from "../../../components/BackgroundImage/BackgroundImage"
-import { LegacyRef, useEffect, useState } from "react"
+import { LegacyRef } from "react"
 import Curriculo from "../../../assets/docs/curriculo.pdf"
-import './Apresentacao.css'
+import TextoAnimado from "./TextoAnimado";
 
 interface ApresentacaoProps{
   elementRef?: LegacyRef<HTMLDivElement>
@@ -28,34 +28,7 @@ const StyledAvatar = styled("img")( () => ({
 }))
 
 const Apresentacao: React.FC<ApresentacaoProps> = ( { elementRef } ) => {  
-  const textoOriginal = "Desenvolvedor de Software"
-  const [texto, setTexto] = useState(textoOriginal)
-
-  useEffect(() =>{
-    efeitoMaquinaDeEscrever(textoOriginal)
-  },[])
-
-  const efeitoMaquinaDeEscrever = (t: string) =>{
-    const arr = t.split('')
-    let tt = ''
-    setTexto(tt)  
-    arr.forEach((letra, i) => {
-      if(i === 0){
-        //return
-      } 
-      
-      setTimeout(() => {
-        tt += letra
-        setTexto( tt )
-        if(i == textoOriginal.length -1){
-          setTimeout(() => efeitoMaquinaDeEscrever(textoOriginal), 2000)
-          
-        }
-      },100 * i)
-    })
-  }
-
-
+    
   return ( 
     <StyledSection ref={ elementRef }>
       <Container>
@@ -70,7 +43,7 @@ const Apresentacao: React.FC<ApresentacaoProps> = ( { elementRef } ) => {
               <Typography variant="h1" color="primary.contrastText" textAlign="center">Isaias Xavier</Typography>
             </Grid>
             <Grid size={{xs:12, md:12}}>
-              <Typography className="animado" variant="h3" color="primary.contrastText" textAlign="center">{ texto }</Typography>
+              <TextoAnimado texto="Desenvolvedor de Software"></TextoAnimado>
             </Grid>
             <Grid container display="flex" justifyContent="center" spacing={2} marginTop={4}>
               <Grid size={{ xs:12, md:4 }} display="flex" justifyContent="center">
